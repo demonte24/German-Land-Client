@@ -8,19 +8,32 @@
 
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+
     </head>
     <body>
       <h1>German Land</h1>
-      <section id="nav-bar">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img id=prince src="https://media.git.generalassemb.ly/user/33721/files/3b02aa00-9d10-11eb-9f15-f273438e66ab" alt="princier" class="center">
+        </div>
+        <div class="carousel-item">
+          <img src="https://media.git.generalassemb.ly/user/33721/files/5e2d5980-9d10-11eb-9698-4a8d7780d8ca" alt="princier" class="center">
+        </div>
+      </div>
+    </div>
+    <nav id="nav-bar">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#dog-section">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#match">Match</a></li>
         </ul>
-    </section>
+    </nav>
 
       <main>
+
         <section class="auth section">
           <form id='sign-up'>
             <input type='email' name='credentials[email]' placeholder='Enter Email Here' required>
@@ -45,6 +58,47 @@
             <button class='Signout'>Sign Out</button>
           </form>
         </section>
+
+        <section id="dogs-section">
+          <form id='dogs-index'>
+            <h2>Get All Dogs</h2>
+            <button class='button'>See Matches</button>
+            <hr>
+         </form>
+
+          <form id='dogs-create'>
+             <h2>Add A Dog</h2>
+             <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
+             <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
+             <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
+             <button class='button'>Add Matches</button>
+             <hr>
+          </form>
+          <div id='dogs-create-message'></div>
+
+
+          <form id='dogs-update'>
+             <h2>Update A Dog</h2>
+             <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
+             <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
+             <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
+             <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
+             <button class='button'>Update Matches</button>
+             <hr>
+          </form>
+          <div id='dogs-update-message'></div>
+
+
+          <form id='dogs-destroy'>
+            <h2>Remove A Dog</h2>
+            <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
+            <button class='button'>Remove Matches</button>
+            <hr>
+          </form>
+          <div id='dogs-destroy-message'></div>
+
+        </section>
+
         <section>
           <div id='message'></div>
           <div id='error-message'></div>

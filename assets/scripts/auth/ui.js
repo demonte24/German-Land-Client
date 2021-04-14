@@ -15,7 +15,7 @@ const signUpFailure = function(response) {
 
 const signInSuccess = function(response) {
   store.user = response.user
-$('#message').text('Welcome to PAWSOMEDogs!')
+$('#message').text('Welcome to German Land!')
   $('#sign-in').trigger('reset')
   $('#change-password').show()
   $('#nav-bar').show()
@@ -46,12 +46,13 @@ const changePasswordFailure = function(response) {
 
 const signOutSuccess = function(response) {
 
-  $('#message').text('Thank you for your input on our PawFriends!')
+  $('#message').text('Thank you for adding a potential match!')
     $('#sign-out').trigger('reset')
     $('#sign-in').show()
     $('#sign-up').show()
     $('#change-password').hide()
     $('#sign-out').hide()
+    $('#nav-bar').hide()
 
     $('#dogs-index').hide()
     $('#dogs-create').hide()
@@ -64,6 +65,7 @@ const signOutFailure = function(response) {
   $('#error-message').text('Sign Out failed, try again')
   $('form').trigger('reset')
 }
+
 
 module.exports = {
   signUpSuccess,
