@@ -23,10 +23,8 @@ $('#message').text('Welcome to German Land!')
   $('#sign-up').hide()
   $('#sign-in').hide()
 
-  $('#dogs-index').show()
   $('#dogs-create').show()
-  $('#dogs-update').show()
-  $('#dogs-destroy').show()
+  
 }
 
 const signInFailure = function(response) {

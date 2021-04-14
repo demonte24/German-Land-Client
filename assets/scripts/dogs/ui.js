@@ -53,6 +53,9 @@ const onCreateSuccess = function () {
   $('#dogs-display').text('matches have changed! Click "See Matches" again to see all the matches.')
   $('#message').addClass('success')
   $('form').trigger('reset')
+  $('#dogs-index').show()
+  $('#dogs-update').show()
+  $('#dogs-destroy').show()
 }
 const onCreateFailure = function () {
   $('#error-message').text('Create failed Try Again!')

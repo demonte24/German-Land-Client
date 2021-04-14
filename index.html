@@ -23,14 +23,6 @@
         </div>
       </div>
     </div>
-    <nav id="nav-bar">
-        <ul>
-          <li><a href="#dog-section">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#match">Match</a></li>
-        </ul>
-    </nav>
 
       <main>
 
@@ -48,26 +40,29 @@
             <button class='button'>Sign in</button>
           </form>
 
+
           <form id='change-password'>
             <input type='password' name='passwords[old]' placeholder='Old password' required>
             <input type='password' name='passwords[new]' placeholder='New password' required>
             <button class='button'>Change password</button>
           </form>
 
+          <hr/>
+
           <form id='sign-out'>
-            <button class='Signout'>Sign Out</button>
+            <button class='button'>Sign Out</button>
           </form>
         </section>
 
         <section id="dogs-section">
           <form id='dogs-index'>
-            <h2>Get All Dogs</h2>
+            <h2>Get All Matches</h2>
             <button class='button'>See Matches</button>
             <hr>
          </form>
 
           <form id='dogs-create'>
-             <h2>Add A Dog</h2>
+             <h2>Add A Match</h2>
              <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
              <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
              <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
@@ -78,7 +73,7 @@
 
 
           <form id='dogs-update'>
-             <h2>Update A Dog</h2>
+             <h2>Update A Match</h2>
              <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
              <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
              <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
@@ -90,7 +85,7 @@
 
 
           <form id='dogs-destroy'>
-            <h2>Remove A Dog</h2>
+            <h2>Remove A Match</h2>
             <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
             <button class='button'>Remove Matches</button>
             <hr>
@@ -98,6 +93,7 @@
           <div id='dogs-destroy-message'></div>
 
         </section>
+
 
         <section>
           <div id='message'></div>

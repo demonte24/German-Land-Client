@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://i.pinimg.com/originals/2a/df/b9/2adfb90d90e467501bc8ecc111176405.png">
+
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+
+  <h1>Matches </h1>
+</head>
+<body>
+<header>
+    <nav id="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="nav/">Match</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="dogs-section">
+      <form id='dogs-index'>
+        <h2>Get All Matches</h2>
+        <button class='button'>See Matches</button>
+        <hr>
+     </form>
+
+      <form id='dogs-create'>
+         <h2>Add A Match</h2>
+         <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
+         <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
+         <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
+         <button class='button'>Add Matches</button>
+         <hr>
+      </form>
+      <div id='dogs-create-message'></div>
+
+
+      <form id='dogs-update'>
+         <h2>Update A Match</h2>
+         <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
+         <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
+         <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
+         <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
+         <button class='button'>Update Matches</button>
+         <hr>
+      </form>
+      <div id='dogs-update-message'></div>
+
+
+      <form id='dogs-destroy'>
+        <h2>Remove A Match</h2>
+        <input type='text' name='dog[id]' placeholder='Enter ID Here' required>
+        <button class='button'>Remove Matches</button>
+        <hr>
+      </form>
+      <div id='dogs-destroy-message'></div>
+
+      <section>
+        <div id='message'></div>
+        <div id='error-message'></div>
+        <div id='breeds-display'></div>
+        <div id='dogs-display'></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

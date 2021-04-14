@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 
+
 #message {
   font-family: cursive;
   color: darkgreen;
@@ -33,14 +34,17 @@ img {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5),
+  background-image: linear-gradient(rgba(255,0,0,0),
   rgba(255, 255, 0, 0.5)),
   url("../../media/examples/lizard.png");
 }
 
 h1 {
   font-family: cursive;
-  color: black;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
