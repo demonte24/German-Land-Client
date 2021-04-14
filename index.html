@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>German Land</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="shortcut icon" type="image/x-icon" href="https://i.pinimg.com/originals/2a/df/b9/2adfb90d90e467501bc8ecc111176405.png">
 
-      <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>German Land</h1>
+      <section id="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#match">Match</a></li>
+        </ul>
+    </section>
+
+      <main>
+        <section class="auth section">
+          <form id='sign-up'>
+            <input type='email' name='credentials[email]' placeholder='Enter Email Here' required>
+            <input type='password' name='credentials[password]' placeholder='Enter Password Here' required>
+            <input type='password' name='credentials[password_confirmation]' placeholder='Enter Password Again' required>
+            <button class='button'>Sign Up</button>
+          </form>
+            <hr>
+          <form id='sign-in'>
+            <input type='email' name='credentials[email]' placeholder='Enter Email Here' required>
+            <input type='password' name='credentials[password]' placeholder='Enter Password Here' required>
+            <button class='button'>Sign in</button>
+          </form>
+
+          <form id='change-password'>
+            <input type='password' name='passwords[old]' placeholder='Old password' required>
+            <input type='password' name='passwords[new]' placeholder='New password' required>
+            <button class='button'>Change password</button>
+          </form>
+
+          <form id='sign-out'>
+            <button class='Signout'>Sign Out</button>
+          </form>
+        </section>
+        <section>
+          <div id='message'></div>
+          <div id='error-message'></div>
+          <div id='breeds-display'></div>
+          <div id='dogs-display'></div>
+        </section>
+      </main>
     </body>
 </html>
