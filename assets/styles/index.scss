@@ -1,27 +1,124 @@
 @import '~bootstrap/scss/bootstrap';
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+#message {
   font-family: cursive;
+  color: darkgreen;
+  text-align: center;
+}
+#error-message {
+  font-family: cursive;
+  color: darkred;
+  text-align: center;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+#dogs-display {
+  font-family: cursive;
+  color: darkgreen;
+  text-align: center;
+}
+
+img {
+  border: 5px solid #ddd;
+  border-radius: 20%;
+  padding: 5px;
+  width: 450px;
+  text-align: center;
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5),
+  rgba(255, 255, 0, 0.5)),
+  url("../../media/examples/lizard.png");
+}
+
+h1 {
+  font-family: cursive;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-family: cursive;
+  color: black;
+
+}
+
+.button{
+  font-family: cursive;
+  padding: 10px 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: darkgreen}
+
+.button:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#sign-up {
+  font-family: cursive;
+  text-align: center;
+}
+
+#sign-in {
+  font-family: cursive;
+  text-align: center;
+}
+
+#change-password {
+  font-family: cursive;
+  text-align: right;
+}
+
+#sign-out {
+  font-family: cursive;
+  text-align: right;
+}
+.Signout:hover {background-color: lightblue}
+
+.Signout:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#dogs-create {
+  font-family: cursive;
+  text-align: center;
+}
+
+#dogs-update {
+  font-family: cursive;
+  text-align: center;
+}
+
+#dogs-index {
+  font-family: cursive;
+  text-align: center;
+}
+
+#dogs-destroy {
+  font-family: cursive;
+  text-align: center;
+}
+
+#prince {
+  height: 556px;
+  width: 700px;
 }
