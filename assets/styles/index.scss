@@ -1,29 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 
 #message {
   font-family: cursive;
@@ -46,8 +22,10 @@ img {
   border: 5px solid #ddd;
   border-radius: 20%;
   padding: 5px;
-  width: 450px;
+  width: 370px;
   text-align: center;
+  height: 500px;
+  display: inline-block;
   }
 
 .center {
@@ -58,14 +36,17 @@ img {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5),
+  background-image: linear-gradient(rgba(255,0,0,0),
   rgba(255, 255, 0, 0.5)),
   url("../../media/examples/lizard.png");
 }
 
 h1 {
   font-family: cursive;
-  color: black;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
