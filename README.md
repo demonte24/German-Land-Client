@@ -6,7 +6,7 @@
 
 -	Deployed API: https://warm-thicket-76411.herokuapp.com/
 
--	Deployed Client:
+-	Deployed Client: https://demonte24.github.io/German-Land-client/
 
 ### German Land
   Is a webpage where users can add their female dogs to match with my male German shepherd.
