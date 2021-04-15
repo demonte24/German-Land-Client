@@ -16,6 +16,11 @@ let dogsHtml = ''
           <button>Update dog</button>
           <hr>
         </form>
+
+        <form class='dogs-delete-dynamic' data-id=${dog._id}>
+         <button class='button'>Delete dog</button>
+         <hr>
+       </form>
     `
   })
   $('#dogs-display').html(dogsHtml)
@@ -53,6 +58,7 @@ const onCreateSuccess = function () {
   $('#dogs-display').text('matches have changed! Click "See Matches" again to see all the matches.')
   $('#message').addClass('success')
   $('form').trigger('reset')
+  $('#dogs-index').show()
 }
 const onCreateFailure = function () {
   $('#error-message').text('Create failed Try Again!')

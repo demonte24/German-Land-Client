@@ -6,6 +6,8 @@ const api = require('./api')
 const signUpSuccess = function(response) {
   $('#message').text('Thank you for signing up!')
   $('#sign-up').trigger('reset')
+  $('#sign-in').show()
+  $('#sign-up').hide()
 }
 
 const signUpFailure = function(response) {
@@ -18,12 +20,11 @@ const signInSuccess = function(response) {
 $('#message').text('Welcome to German Land!')
   $('#sign-in').trigger('reset')
   $('#change-password').show()
-  $('#nav-bar').show()
   $('#sign-out').show()
   $('#sign-up').hide()
   $('#sign-in').hide()
 
-  $('#dogs-index').show()
+  
   $('#dogs-create').show()
   $('#dogs-update').show()
   $('#dogs-destroy').show()
