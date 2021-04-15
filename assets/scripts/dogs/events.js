@@ -47,10 +47,21 @@ const onDynamicUpdatedog = function (event) {
     .catch(ui.onError)
 }
 
+const onDynamicDeletedog = function (event) {
+  event.preventDefault()
+  const form = event.target
+  const formData = getFormFields(form)
+  const id = $(form).data('id')
+  api.destroyDog(id, formData)
+    .then(ui.onDestroySuccess)
+    .catch(ui.onError)
+}
+
 module.exports = {
   onIndexdogs,
   onDestroydog,
   onUpdatedog,
   onCreatedog,
-  onDynamicUpdatedog
+  onDynamicUpdatedog,
+  onDynamicDeletedog
 }
