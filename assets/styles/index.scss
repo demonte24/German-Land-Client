@@ -18,14 +18,14 @@
   text-align: center;
 }
 
-img {
-  border: 5px solid #ddd;
-  border-radius: 20%;
-  padding: 5px;
-  width: 370px;
-  text-align: center;
-  height: 500px;
-  display: inline-block;
+#img {
+  // border: 5px solid #ddd;
+  // border-radius: 5%;
+  // padding: 35px;
+  // width: 370px;
+  align: center;
+  height: 400px;
+  display: center;
   }
 
 .center {
@@ -43,9 +43,10 @@ body {
 h1 {
   font-family: cursive;
   font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #737373;
+  background: -webkit-linear-gradient(#ffff00, #330066);
+  // -webkit-background-clip: text;
+  // // -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
@@ -126,4 +127,14 @@ h2 {
 #prince {
   height: 556px;
   width: 700px;
+}
+
+.card-text{
+  font-family: cursive;
+  color: purple;
+}
+
+.card-title{
+  font-family: cursive;
+  color: purple;
 }
