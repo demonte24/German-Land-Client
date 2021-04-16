@@ -13,6 +13,8 @@ $('#dogs-create').hide()
 $('#dogs-update').hide()
 $('#dogs-destroy').hide()
 
+$('.card-group').hide()
+
 // use require without a reference to ensure a file is bundled
 // require('./example')
 

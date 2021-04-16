@@ -24,10 +24,10 @@ $('#message').text('Welcome to German Land!')
   $('#sign-up').hide()
   $('#sign-in').hide()
 
-  
   $('#dogs-create').show()
-  $('#dogs-update').show()
-  $('#dogs-destroy').show()
+  
+  $('.card-group').hide()
+
 }
 
 const signInFailure = function(response) {
@@ -60,6 +60,8 @@ const signOutSuccess = function(response) {
     $('#dogs-update').hide()
     $('#dogs-destroy').hide()
     $('#dogs-display').hide()
+
+    $('#contact').hide()
 }
 
 const signOutFailure = function(response) {
