@@ -26,8 +26,8 @@ $('#message').text('Welcome to German Land!')
 
   $('#dogs-create').show()
 
-  $('.card-group').hide()
-
+  $('.card-group').show()
+  $('#img-home').hide()
 }
 
 const signInFailure = function(response) {
@@ -62,6 +62,8 @@ const signOutSuccess = function(response) {
     $('#dogs-display').hide()
 
     $('#contact').hide()
+    $('#img-home').show()
+    $('.card-group').hide()
 }
 
 const signOutFailure = function(response) {
