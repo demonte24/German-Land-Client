@@ -6,21 +6,21 @@ let dogsHtml = ''
       <h4>Name: ${dog.name}</h4>
       <p>Breed: ${dog.breed}</p>
       <p>Age: ${dog.age}<p>
-      <p>ID: ${dog._id}</p>
+      
 
 
         <form class='dogs-update-dynamic' data-id=${dog._id}>
           <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
           <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
           <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
-          <button>Update dog</button>
+          <button class='button'>Update dog</button>
           <hr>
         </form>
 
         <form class='dogs-delete-dynamic' data-id=${dog._id}>
-         <button class='button'>Delete dog</button>
-         <hr>
-       </form>
+          <button class='button'>Delete dog</button>
+          <hr>
+        </form>
     `
   })
   $('#dogs-display').html(dogsHtml)
@@ -59,6 +59,8 @@ const onCreateSuccess = function () {
   $('#message').addClass('success')
   $('form').trigger('reset')
   $('#dogs-index').show()
+  $('#dogs-update').show()
+  $('#dogs-destroy').show()
 }
 const onCreateFailure = function () {
   $('#error-message').text('Create failed Try Again!')
