@@ -1,6 +1,11 @@
 # German-Land-client
 # German Land
 
+### Setup Steps
+- Fork and clone this repository
+- Run npm install to install dependencies
+- Use grunt serve to start the server
+
 ### Important Links
 -	Front-End-Repo: https://github.com/demonte24/German-Land-client/tree/master
 
