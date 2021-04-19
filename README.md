@@ -6,6 +6,9 @@
 - Run npm install to install dependencies
 - Use grunt serve to start the server
 
+### Planing
+Planning this project was so fun. Being able to tackle another full stack project and show off what I have learned over the 12 weeks was so exciting and nerve wrecking. Being able to have control over what language's I can use made things a-lot more easy for and i was able to make things even more personal to me so that pushed me to get things finished.
+
 ### Important Links
 -	Front-End-Repo: https://github.com/demonte24/German-Land-client/tree/master
 
@@ -32,6 +35,10 @@
 -	Ajax
 -	JavaScript
 - jQuery
+
+### Unsolved Problems
+adding a many to many relationship where users can see other users post and communicate with each other.
+
 
 #### Wireframe
 <img width="578" alt="Screen Shot 2021-04-14 at 12 39 19 PM" src="https://media.git.generalassemb.ly/user/33721/files/b2d7d100-9d1e-11eb-8dc1-982741da60eb">
