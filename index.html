@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>German Land</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="shortcut icon" type="image/x-icon" href="https://i.pinimg.com/originals/2a/df/b9/2adfb90d90e467501bc8ecc111176405.png">
+
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+
+    </head>
+    <body>
+      <h1>German Land</h1>
+      <div>
+        <img id="img-home" class="card-img-top" src="https://media.git.generalassemb.ly/user/33721/files/95cb0b80-9ea0-11eb-84d3-49c7d37233a2" alt="Card image cap">
+      </div>
+
+    <div class="card-group">
+    <div  class="card">
+      <img id="img" class="card-img-top" src="https://media.git.generalassemb.ly/user/33721/files/ec1e4880-9dd3-11eb-9db5-a346f715884a" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Princier</h5>
+        <hr>
+        <p class="card-text">At 2 month's Princier was nearly all black, I didnt think he would get very much tan. He was very cuddly and playful. He did not like being left alone, and he demanded all of my attention like any baby would.</p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+    <div  class="card">
+      <img id="img" class="card-img-top" src="https://media.git.generalassemb.ly/user/33721/files/fd675500-9dd3-11eb-9a07-e8f2a330ca0d" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Princier</h5>
+        <hr>
+        <p class="card-text">At 8 month's, His under body became Tan/White. This was a weird time in life for Princier. His Paws, Ears, and Tail grew over night and he wasn't ready for that growth. He still thought he was that small 2 month old puppy that could still lay on me.</p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+    <div  class="card">
+      <img id="img" class="card-img-top" src="https://media.git.generalassemb.ly/user/33721/files/f17b9300-9dd3-11eb-8ecb-497ec8db18a0" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Princier </h5>
+        <hr>
+        <p class="card-text">At 1 year, Princier finaly exscaped the weird part of his growing stage. His body cought up with the rest of him. His Paws, Ears, and Tail are still large but its alot more portionant with the rest of his body. He still love cuddles and think he is still that small 2 month old puppy.
+        </body> </p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+  </div>
+
+    <hr>
+      <main>
+
+        <section class="auth section">
+
+          <form id=sign-up>
+            <div class="form-group">
+              <input type="email" name='credentials[email]'class="form-control"  aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name='credentials[password]' class="form-control"  placeholder="Enter Password" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name='credentials[password_confirmation]' class="form-control"  placeholder="Enter Password Again" required>
+            </div>
+
+            <button class='button'>Sign Up</button>
+          </form>
+            <hr>
+
+          <form id=sign-in>
+            <div class="form-group">
+              <input type="email" name='credentials[email]'class="form-control"  aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name='credentials[password]' class="form-control"  placeholder="Enter Password" required>
+            </div>
+            <button class='button'>Sign In</button>
+          </form>
+
+          <form id='change-password'>
+            <div class="form-row">
+              <div class="col">
+                <input type="password" name='passwords[old]' class="form-control" placeholder="Old Password" required>
+              </div>
+              <div class="col">
+                <input type="password" name='passwords[new]' class="form-control" placeholder="New Password" required>
+              </div>
+            </div>
+            <button class='button'>Change password</button>
+          </form>
+
+          <hr/>
+
+          <form id='sign-out'>
+            <button class='button'>Sign Out</button>
+          </form>
+        </section>
+
+        <section id="dogs-section">
+          <form id='dogs-create'>
+             <h2>Add A Match</h2>
+             <input type='text' name='dog[name]' placeholder='Enter Name Here' required>
+             <input type='text' name='dog[breed]' placeholder='Enter Breed Here' required>
+             <input type='number' name='dog[age]' placeholder='Enter Age Here' required>
+             <button class='button'>Add Matches</button>
+             <hr>
+          </form>
+          <div id='dogs-create-message'></div>
+
+          <form id='dogs-index'>
+            <h2>Get All Matches</h2>
+            <button class='button'>See Matches</button>
+            <hr>
+         </form>
+
+        </section>
+
+
+
+
+        <section>
+          <div id='message'></div>
+          <div id='error-message'></div>
+          <div id='breeds-display'></div>
+          <div id='dogs-display'></div>
+        </section>
+      </main>
+    </body>
+</html>
