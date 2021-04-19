@@ -6,7 +6,6 @@ const dogEvents = require('./dogs/events')
 const authEvents = require('./auth/events')
 $('#change-password').hide()
 $('#sign-out').hide()
-$('#sign-in').hide()
 
 $('#dogs-index').hide()
 $('#dogs-create').hide()
