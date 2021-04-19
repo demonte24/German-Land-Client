@@ -6,7 +6,6 @@ let dogsHtml = ''
       <h4>Name: ${dog.name}</h4>
       <p>Breed: ${dog.breed}</p>
       <p>Age: ${dog.age}<p>
-      <p>ID: ${dog._id}</p>
 
 
         <form class='dogs-update-dynamic' data-id=${dog._id}>

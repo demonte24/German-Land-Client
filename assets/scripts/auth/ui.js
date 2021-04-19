@@ -6,7 +6,7 @@ const api = require('./api')
 const signUpSuccess = function(response) {
   $('#message').text('Thank you for signing up!')
   $('#sign-up').trigger('reset')
-  $('#sign-in').show()
+
   $('#sign-up').hide()
 }
 
